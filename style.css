@@ -1,0 +1,49 @@
+:root{
+    --vermelho: #F82C2C;
+    --cinza: #121212;
+    --branco: #f9f6f6;
+}
+
+*, :root { /* root seleciona o documento raíz */
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--cinza);
+    color: var(--branco);
+}
+
+header{
+    background-color: var(--vermelho);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+#btnMenu{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--branco);
+    font-size: larger;
+    margin: 0px 12px; /* top bottom / right left*/
+}
+
+
+
+@media (max-width:600px){
+    #btnMenu{
+        display: flex;
+    }
+    #menu{
+        display: none;
+    }
+
+}
