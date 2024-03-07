@@ -44,7 +44,7 @@ nav a{
 }
 
 h2{
-    margin: 2rem;
+    margin: 4rem 2rem;
 }
 
 #movieOptions{
@@ -64,14 +64,7 @@ h2{
     display: flex;
 }
 
-.section{
-    width: 100%;
-}
 .info{
-    background-color: var(--cinzaclaro);
-    padding: 14px 50px;
-    border-radius: 10px;
-    
     position: absolute;
     margin: 40px 0;
     left: 50%;
@@ -87,6 +80,45 @@ h2{
 #banner img{
     width: 100%;
     object-fit: cover;
+}
+.movie{
+    filter: saturate(30%);
+}
+.movie:hover{
+    filter: saturate(100%);
+    transform: scale(1.015);
+    border: 1px solid var(--branco);
+}
+#news {
+    display: flex; /* Usando flexbox para alinhar os elementos lado a lado */
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    padding: 20px;
+}
+#notice,#notice2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os itens horizontalmente */
+    margin: 0 10px; /* Adiciona um espaçamento entre os itens */
+    width: 300px;
+    height: 300px;
+    background-color: var(--cinzaclaro);
+    border-radius: 20px;
+    filter: saturate(30%);
+}
+#notice img, #notice2 img {
+    width: 300px;
+    height: 250px;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+}
+.text, .text2{
+    margin-top: 10px;
+}
+#notice:hover, #notice2:hover{
+    border: 1px solid var(--branco);
+    filter: saturate(100%);
 }
 
 @media (max-width:630px){
@@ -133,6 +165,9 @@ h2{
     }
     #banner{
         height: auto;
+    }
+    #news{
+        overflow-x: scroll;
     }
 
 }
