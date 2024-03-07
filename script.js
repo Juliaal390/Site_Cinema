@@ -1,10 +1,15 @@
 document.getElementById('btnMenu').addEventListener('click', function(){
     let menuBarr = document.getElementById('menu');
-    let screenWidth = window.innerWidth; // Obtém a largura da janela do navegador
+    let screenWidth = window.innerWidth; // largura da janela do navegador
 
     if(screenWidth <= 630){
-        menuBarr.classList.toggle('show-menu');
-        /* se a classe existir, será removida, e se não existir, será adicionada */
+        if (menuBarr.classList.contains('show-menu')) {
+            menuBarr.classList.remove('show-menu'); // remove a classe 
+        } else {
+            menuBarr.classList.add('show-menu'); // adiciona a classe
+        }
+    } else {
+        menuBarr.classList.remove('show-menu'); // fecha o menu burguer ao aumentar a tela
     }
 });
 

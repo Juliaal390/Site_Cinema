@@ -42,15 +42,15 @@ h2{
     margin: 2rem;
 }
 
-#moovieOptions{
+#movieOptions{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
 }
 
-#moovieOptions img{ /* diminui o tamanho da imagem */
-    width: 20%;
+#movieOptions img{ /* diminui o tamanho da imagem */
+    max-width: 20%;
 }
 #menu{
     position: fixed;
@@ -58,16 +58,32 @@ h2{
     display: flex;
 }
 
+.section{
+    width: 100%;
+}
+.info{
+    background-color: var(--vermelho);
+    padding: 14px 50px;
+    border-radius: 10px;
+    
+    position: absolute;
+    margin: 20px 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
 @media (max-width:630px){
-    #menu.show-menu {
-        display: flex;
+    .info{
+        z-index: 1;
     }
     #btnMenu, h1{
         display: flex;
-        z-index: 1; /* elemento na frente */
+        z-index: 3; /* elemento na frente */
     }
-    #menu{
+    #menu{ /* menu sem classe */
         /* Centralizar no meio da tela */
+        z-index: 2;
         display: none;
         align-items: center;
         justify-content: center;
@@ -81,16 +97,20 @@ h2{
         height: 100%;
 
     }
+    #menu.show-menu { /* menu com classe */
+        display: flex;
+    }
     #menu a{
         display: block;
         margin: 20px 0; /* top bottom / right left */
     }
-    #moovieOptions{
+    #movieOptions{
+        justify-content: start;
         margin: 5px;
         overflow-x: scroll;
     }
-    #moovieOptions img{
-        width: 50%;
+    #movieOptions img{
+        max-width: 50%;
     }
 
 }
