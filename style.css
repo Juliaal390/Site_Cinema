@@ -1,6 +1,7 @@
 :root{
     --vermelho: #F82C2C;
     --cinza: #121212;
+    --cinzaclaro: #1d1d1d;
     --branco: #f9f6f6;
     --corMenu: rgba(248, 44, 44, 0.5); /* opacidade */
 }
@@ -22,6 +23,10 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    /* menu fixo */
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 #btnMenu{
@@ -50,6 +55,7 @@ h2{
 }
 
 #movieOptions img{ /* diminui o tamanho da imagem */
+    border-radius: 20px;
     max-width: 20%;
 }
 #menu{
@@ -62,20 +68,30 @@ h2{
     width: 100%;
 }
 .info{
-    background-color: var(--vermelho);
+    background-color: var(--cinzaclaro);
     padding: 14px 50px;
     border-radius: 10px;
     
     position: absolute;
-    margin: 20px 0;
+    margin: 40px 0;
     left: 50%;
     transform: translateX(-50%);
 
 }
+#banner{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+#banner img{
+    width: 100%;
+    object-fit: cover;
+}
 
 @media (max-width:630px){
     .info{
-        z-index: 1;
+        z-index: 0;
     }
     #btnMenu, h1{
         display: flex;
@@ -111,6 +127,12 @@ h2{
     }
     #movieOptions img{
         max-width: 50%;
+    }
+    .info{
+        font-size: 12px;
+    }
+    #banner{
+        height: auto;
     }
 
 }
