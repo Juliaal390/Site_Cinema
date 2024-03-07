@@ -2,6 +2,7 @@
     --vermelho: #F82C2C;
     --cinza: #121212;
     --branco: #f9f6f6;
+    --corMenu: rgba(248, 44, 44, 0.3);
 }
 
 *, :root { /* root seleciona o documento raíz */
@@ -38,12 +39,30 @@ nav a{
 
 
 
-@media (max-width:600px){
+@media (max-width:630px){
     #btnMenu{
         display: flex;
+        z-index: 1; /* elemento na frente */
     }
     #menu{
+        /* Centralizar no meio da tela */
+        position: fixed;
         display: none;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        top: 50%;
+        left: 50%; 
+        transform: translate(-50%, -50%);
+
+        background-color: var(--corMenu); /* opacidade */
+        width: 100%;
+        height: 100%;
+
+    }
+    #menu a{
+        display: block;
+        margin: 20px 0; /* top bottom / right left */
     }
 
 }
