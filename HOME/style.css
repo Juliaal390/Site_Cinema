@@ -1,8 +1,9 @@
 :root{
-    --vermelho: #F82C2C;
+    --vermelho: #ba1308;
+    --vermelhoescuro: #6f0d07;
     --cinza: #121212;
     --cinzaclaro: #1d1d1d;
-    --branco: #f9f6f6;
+    --branco: #fffaff;
     --corMenu: rgba(248, 44, 44, 0.5); /* opacidade */
 }
 
@@ -14,7 +15,7 @@
 body{
     background-color: var(--cinza);
     color: var(--branco);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 header{
@@ -120,18 +121,37 @@ h2{
     border: 1px solid var(--branco);
     filter: saturate(100%);
 }
+footer{
+    background-color: var(--vermelho);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0px;
+    margin-top: 4rem;
+}
+#icons, #icons a{
+    padding: 20px;
+    font-size: larger;
+    color: var(--vermelhoescuro);
+}
 
-@media (max-width:630px){
+a:hover, a i:hover{
+    color: var(--cinzaclaro);
+}
+
+@media (max-width:660px){
     .info{
+        font-size: 12px;
         z-index: 0;
     }
     #btnMenu, h1{
         display: flex;
-        z-index: 3; /* elemento na frente */
+        z-index: 2;
     }
     #menu{ /* menu sem classe */
         /* Centralizar no meio da tela */
-        z-index: 2;
+        z-index: 1;
         display: none;
         align-items: center;
         justify-content: center;
@@ -140,7 +160,7 @@ h2{
         left: 50%; 
         transform: translate(-50%, -50%);
 
-        background-color: var(--corMenu); /* opacidade */
+        background-color: var(--corMenu);
         width: 100%;
         height: 100%;
 
@@ -160,14 +180,14 @@ h2{
     #movieOptions img{
         max-width: 50%;
     }
-    .info{
-        font-size: 12px;
-    }
     #banner{
         height: auto;
     }
     #news{
         overflow-x: scroll;
+    }
+    footer p{
+        font-size: smaller;
     }
 
 }
