@@ -20,7 +20,7 @@ const elementos = document.getElementsByClassName('movie');
 
 for (let i = 0; i < elementos.length; i++) {
     elementos[i].addEventListener('click', function() {
-        window.location.href = '../Em Cartaz/EmCartaz.html';
+        window.location.href = 'emCartaz.html';
     });
 }
 
