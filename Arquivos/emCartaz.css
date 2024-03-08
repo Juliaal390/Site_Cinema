@@ -83,7 +83,7 @@ div p{
     width: 30px;
     display: flex;
     text-align: center;
-    margin-top: 10px;
+    margin: 10px 0 10px 0;
 }
 .A16, .A14{
     background-color: var(--laranja);
