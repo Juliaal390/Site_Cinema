@@ -1,4 +1,4 @@
-document.getElementById('btnMenu').addEventListener('click', function(){
+document.getElementById('btnMenu').addEventListener('click', ()=>{
     let menuBarr = document.getElementById('menu');
     let screenWidth = window.innerWidth; // largura da janela do navegador
 
