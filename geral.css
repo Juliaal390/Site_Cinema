@@ -22,3 +22,15 @@ body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+::-webkit-scrollbar{
+    width: 10px;
+    height: 5px;
+}
+::-webkit-scrollbar-track{
+    background-color: var(--cinzaclaro);
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--vermelho);
+    border-radius: 10px;
+}
+
