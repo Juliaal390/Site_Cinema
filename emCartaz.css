@@ -52,19 +52,18 @@ footer{
 a:hover, a i:hover{
     color: var(--cinzaclaro);
 }
-
-#Principal{
-    display: flex;
-    flex-direction: column;
-    gap: 100px;
-    margin: 10px 25%;
-}
 img{
     width: 30%;
     border-radius: 20px;
 }
 div p{
     width: 80%;
+}
+#Principal{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    margin: 10px 25%;
 }
 .m{
     display: flex;
@@ -73,7 +72,7 @@ div p{
     justify-content: center;
     background-color: var(--cinzaclaro);
     color: var(--branco);
-    border: 3px solid var(--vermelho);
+    padding: 10px;
     border-radius: 20px;
 }
 
