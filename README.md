@@ -2,6 +2,11 @@
 (Em progresso)
 
 Projeto fictício de criação de um site para cinema. Não foi feito protótipo, o objetivo desse site é testar e aplicar meus conhecimentos em front-end na medida em que eu aprendo. Por conta disso, as atualizações podem ser constantes
+# Visualização
+
+<p>
+  
+  Você pode visualizar o site clicando [aqui](https://site-cinema-sandy.vercel.app/)
 
 # Tecnologias usadas
 
