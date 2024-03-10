@@ -22,4 +22,3 @@ filmesRedirecionar.forEach(e => {
     });
 });
 
-

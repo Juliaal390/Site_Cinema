@@ -13,5 +13,17 @@ document.getElementById('btnMenu').addEventListener('click', ()=>{
     }
 });
 
+const btnConta = document.getElementById('conta');
+const telaLogin = document.getElementById('formLogin');
+
+btnConta.addEventListener('click', (event) => {
+    event.preventDefault();
+    if (telaLogin.style.display === "block") {
+        telaLogin.style.display = "none";
+    } else {
+        telaLogin.style.display = "block";
+    }
+});
+
 
 

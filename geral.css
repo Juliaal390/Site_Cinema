@@ -3,6 +3,7 @@
     --vermelhoescuro: #6f0d07;
     --cinza: #121212;
     --cinzaclaro: #1d1d1d;
+    --botaoLogin: #5e5e5e;
     --branco: #fffaff;
     --corMenu: rgba(248, 44, 44, 0.5); /* opacidade */
     --laranja: orange;
@@ -45,5 +46,37 @@ header{
 ::-webkit-scrollbar-thumb{
     background-color: var(--vermelho);
     border-radius: 10px;
+}
+
+
+
+#formLogin{
+    position: absolute;
+    background-color: var(--branco);
+    padding: 10px;
+    color: var(--cinza);
+    width: 15rem;
+    border: 1px solid var(--cinza);
+    z-index: 1;
+    top: 100%;
+    display: none;
+}
+.loginvisible{
+    display: block;
+    text-align: center;
+}
+#formLogin input{
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid var(--cinzaclaro);
+    border-radius: 10px;
+}
+#formLogin button{
+    margin-left: 10px;
+    padding: 8px 1rem;
+    border-radius: 10px;
+    border: 1px solid var(--cinza);
+    background-color: var(--botaoLogin);
+    color: var(--branco);
 }
 
