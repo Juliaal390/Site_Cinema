@@ -7,19 +7,20 @@
     --corMenu: rgba(248, 44, 44, 0.5); /* opacidade */
     --laranja: orange;
     --preto: black;
-    --amarelo: rgb(220, 216, 7);
+    --amarelo: rgb(241, 238, 18);
 }
 
 *, :root { /* root seleciona o documento raíz */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body{
     background-color: var(--cinza);
     color: var(--branco);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 ::-webkit-scrollbar{

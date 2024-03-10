@@ -53,7 +53,7 @@ a:hover, a i:hover{
     color: var(--cinzaclaro);
 }
 img{
-    width: 30%;
+    width: 40%;
     border-radius: 20px;
 }
 div p{
@@ -62,8 +62,8 @@ div p{
 #Principal{
     display: flex;
     flex-direction: column;
-    gap: 100px;
-    margin: 10px 25%;
+    gap: 80px;
+    margin: 0px 25%;
 }
 .m{
     display: flex;
@@ -72,16 +72,16 @@ div p{
     justify-content: center;
     background-color: var(--cinzaclaro);
     color: var(--branco);
-    padding: 10px;
+    padding: 20px;
     border-radius: 20px;
 }
-
 .A16, .A18, .A12, .A14{
     border-radius: 5px;
     padding: 7px;
     width: 45px;
     display: flex;
-    text-align: center;
+    align-items: center;
+    justify-content: center;
     margin: 10px 0 10px 0;
 }
 .A16, .A14{
@@ -132,13 +132,10 @@ div p{
     .m{
         display: flex;
         flex-direction: column;
-        padding: 20px;
-        border: none;
         border-radius: 0%;
     }
     img{
         width: 50%;
-        border-radius: 20px;
     }
     div p{
         width: 100%;
