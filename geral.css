@@ -61,10 +61,6 @@ header{
     top: 100%;
     display: none;
 }
-.loginvisible{
-    display: block;
-    text-align: center;
-}
 #formLogin input{
     margin: 10px;
     padding: 10px;
@@ -78,5 +74,8 @@ header{
     border: 1px solid var(--cinza);
     background-color: var(--botaoLogin);
     color: var(--branco);
+}
+.entrar{
+    background-color: var(--vermelho) !important;
 }
 
