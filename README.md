@@ -16,5 +16,6 @@ Projeto fictício de criação de um site para cinema. Não foi feito protótipo
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="css3"> <br>
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript"> <br>
 </p>
+
 # Responsividade
 <p>Projeto feito para se adequar à dispositivos móveis e desktop</p>
