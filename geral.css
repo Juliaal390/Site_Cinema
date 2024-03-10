@@ -70,8 +70,8 @@ header{
 #formLogin button{
     margin-left: 10px;
     padding: 8px 1rem;
-    border-radius: 10px;
-    border: 1px solid var(--cinza);
+    border-radius: 8px;
+    border: none;
     background-color: var(--botaoLogin);
     color: var(--branco);
 }

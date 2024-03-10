@@ -7,6 +7,10 @@ document.getElementById('btnMenu').addEventListener('click', ()=>{
             menuBarr.classList.remove('show-menu'); // remove a classe 
         } else {
             menuBarr.classList.add('show-menu'); // adiciona a classe
+            let redirecionarConta = document.getElementById('conta');
+            redirecionarConta.addEventListener('click', ()=>{
+                window.location.href='minhaConta.html';
+            })
         }
     } else {
         menuBarr.classList.remove('show-menu'); // fecha o menu burguer ao aumentar a tela
