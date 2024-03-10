@@ -23,6 +23,18 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+header{
+    background-color: var(--vermelho);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    /* menu fixo */
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
 ::-webkit-scrollbar{
     width: 10px;
     height: 5px;
