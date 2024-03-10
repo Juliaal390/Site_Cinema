@@ -1,7 +1,7 @@
 body{
-    background-image: linear-gradient(var(--vermelho),var(--vermelho),#86140d) !important;
-    background-repeat: no-repeat;
+    background-color: var(--branco) !important;
     height: 100vh;
+    display: none; /* a página fica invisível para desktop */
 }
 
 #btnMenu{
@@ -24,11 +24,31 @@ nav a{
     display: flex;
 }
 
-a:hover{
+footer{
+    background-color: var(--vermelho);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0px;
+    margin-top: 4rem;
+}
+#icons, #icons a{
+    padding: 20px;
+    font-size: larger;
+    color: var(--vermelhoescuro);
+}
+
+a:hover, a i:hover{
     color: var(--cinzaclaro);
 }
 
+
+
 @media (max-width:660px){
+    body{
+        display: block;
+    }
     #btnMenu, h1{
         display: flex;
         z-index: 2;
@@ -55,6 +75,32 @@ a:hover{
     #menu a{
         display: block;
         margin: 20px 0; /* top bottom / right left */
+    }
+    #formLoginMovel{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        margin: 100px;
+    }
+    #formLoginMovel input{
+        padding: 20px;
+        border: 1px solid var(--cinzaclaro);
+        border-radius: 10px;
+    }
+    .btnMovel button{
+        padding: 10px;
+        border-radius: 8px;
+        border: none;
+        background-color: var(--botaoLogin);
+        color: var(--branco);
+    }
+    .btnMovel button:first-child{
+        background-color: var(--vermelho) !important;
+    }
+    footer p{
+        font-size: smaller;
     }
 
 
