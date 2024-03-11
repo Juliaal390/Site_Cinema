@@ -4,7 +4,7 @@
     --cinza: #121212;
     --cinzaclaro: #1d1d1d;
     --botaoLogin: #5e5e5e;
-    --branco: #fffaff;
+    --branco: #efedef;
     --corMenu: rgba(248, 44, 44, 0.5); /* opacidade */
     --laranja: orange;
     --preto: black;
@@ -21,7 +21,7 @@
 body{
     background-color: var(--cinza);
     color: var(--branco);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 header{

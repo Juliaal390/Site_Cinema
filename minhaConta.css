@@ -33,6 +33,10 @@ footer{
     padding: 2rem 0px;
     margin-top: 4rem;
 }
+footer h2{
+    margin: 68px 0;
+}
+
 #icons, #icons a{
     padding: 20px;
     font-size: larger;
