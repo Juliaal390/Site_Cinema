@@ -4,7 +4,7 @@
     --cinza: #121212;
     --cinzaclaro: #1d1d1d;
     --botaoLogin: #5e5e5e;
-    --branco: #efedef;
+    --branco: #f2f2f2;
     --corMenu: rgba(248, 44, 44, 0.5); /* opacidade */
     --laranja: orange;
     --preto: black;
@@ -21,7 +21,7 @@
 body{
     background-color: var(--cinza);
     color: var(--branco);
-    font-family: 'Roboto', sans-serif;
+    font-family: "Quicksand", sans-serif;
 }
 
 header{
@@ -78,4 +78,3 @@ header{
 .entrar{
     background-color: var(--vermelho) !important;
 }
-
